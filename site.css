@@ -136,7 +136,7 @@ body {
 	position:fixed;
 	overflow:auto;
 	height:100%;
-	
+
 	_position:absolute; /* IE sux */
 	_overflow:none;
 }
@@ -184,24 +184,4 @@ body {
 }
 #main #books td {
 	font-size:75%;
-}
-
-/*------------------------- Retweet */
-
-.aa-share {
-	position:fixed;
-	top:3px;
-	right:0px;
-/*	border:1px solid red;*/
-	width:110px !important;
-	height:70px !important;
-}
-.aa-share .aa-buzz,
-.aa-share .aa-twitter,
-.aa-share .aa-facebook {
-	float:none !important;
-}
-.aa-share .aa-buzz,
-.aa-share .aa-twitter {
-	margin-bottom:5px;
 }
