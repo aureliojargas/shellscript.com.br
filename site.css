@@ -112,14 +112,14 @@ body {
 
 /*------------------------- Testemunhos */
 
-#main .nome-testemunho {
+.nome-testemunho {
     padding-left: 1em;
     color: #333;
 }
 
 /*------------------------- Ja Comprei */
 
-#main .passo {
+.passo {
     font-size: 300%;
     font-weight: bold;
     /*background: black;*/
@@ -128,14 +128,14 @@ body {
 
 /*------------------------- Noticias */
 
-#main .newsdate {
+.newsdate {
     font-size: 150%;
     color: #aaa;
 }
 
 /*------------------------- Sidebar */
 
-#main .sidebar {
+.sidebar {
     left: 0;
     top: 0;
     width: 160px;
@@ -154,47 +154,47 @@ body {
     _position: absolute;
     _overflow: none;
 }
-#main .sidebar .capinha {
+.sidebar .capinha {
     border: 1px solid silver;
     display: block;
     margin: 0 auto 8px auto;
     text-align: center;
 }
-#main .sidebar a {
+.sidebar a {
     text-decoration: none;
     font-weight: bold;
     /* gold */
     color: #fd4;
 }
-#main .sidebar a:hover {
+.sidebar a:hover {
     background-color: #fd4;
     color: #000;
 }
-#main .sidebar p {
+.sidebar p {
     margin-bottom: 0;
 }
-#main .sidebar ul {
+.sidebar ul {
     margin: 0;
     padding: 0;
 }
-#main .sidebar ul li {
+.sidebar ul li {
     margin: 0;
     padding: 0;
     line-height: 125%;
     overflow: hidden;
 }
-#main .sidebar .nav ul {
+.sidebar .nav ul {
     /*list-style-image: url(favicon.png);*/
     /*list-style-position: inside;*/
 }
-#main .sidebar .nav ul li {
+.sidebar .nav ul li {
     padding: 0;
     font-size: 13px;
 }
-#main .sidebar .noticias ul li {
+.sidebar .noticias ul li {
     font-size: 8pt;
 }
-#main .sidebar .noticias ul li a {
+.sidebar .noticias ul li a {
     font-weight: normal;
 }
 
