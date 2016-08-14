@@ -50,7 +50,7 @@ body {
 }
 .main h2 {
     font-size: 200%;
-    margin: 4em -120px 1em 0px;
+    margin: 4em -120px 1em 0;
     padding: 0.4em 30px;
     border: 1px solid #aaa;
     border-width: 1px 0 1px 1px;
