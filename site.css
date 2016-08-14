@@ -7,16 +7,16 @@ body {
 
 /*------------------------- Header */
 
-#header {
+.header {
     /*background: yellow;*/
     margin-bottom: 3em;
     padding-bottom: 3em;
     border-bottom: 1px solid #aaa;
 }
-#header h1 {
+.header h1 {
     margin-bottom: 0;
 }
-#header h2 {
+.header h2 {
     margin: 0.4em 0 0 0;
     font-size: 120%;
     font-weight: normal;
@@ -24,17 +24,17 @@ body {
 
 /* Link no meu nome */
 
-#header a {
+.header a {
     color: black;
     text-decoration: none;
 }
-#header a:hover {
+.header a:hover {
     color: blue;
     text-decoration: underline;
 }
 
 /*
-#header:hover {
+.header:hover {
     background: transparent url(favicon.png) right no-repeat;
 }
 */
@@ -42,13 +42,13 @@ body {
 
 /*------------------------- Main */
 
-#main {
+.main {
     margin-bottom: 6em;
 }
-#main a:hover img {
+.main a:hover img {
     outline: 1px solid blue;
 }
-#main h2 {
+.main h2 {
     font-size: 200%;
     margin: 4em -120px 1em 0px;
     padding: 0.4em 30px;
@@ -56,43 +56,43 @@ body {
     border-width: 1px 0 1px 1px;
     background: #eee;
 }
-#main h3 {
+.main h3 {
     margin-top: 2em;
 }
-#main b {
+.main b {
     font-size: 105%;
 }
-#main p,
-#main blockquote,
-#main dt,
-#main dd,
-#main li {
+.main p,
+.main blockquote,
+.main dt,
+.main dd,
+.main li {
     line-height: 1.5em;
 }
-#main hr {
+.main hr {
     margin: 3em 0;
 }
-#main td {
+.main td {
     line-height: 1.2em;
     padding: 0.5em;
 }
-#main blockquote {
+.main blockquote {
     margin: 2.5em auto 4em auto;
     padding: 2em 0;
     border: 1px solid #aaa;
     border-width: 1px 0 1px 0;
     clear: both;
 }
-#main dt {
+.main dt {
     margin: 3.5em 0 0.2em 0;
     font-weight: bold;
 }
-#main dd {
+.main dd {
     margin-left: 0;
     padding-left: 1em;
     border-left: 5px solid #ccc;
 }
-#main li {
+.main li {
     margin-bottom: 1em;
 }
 
