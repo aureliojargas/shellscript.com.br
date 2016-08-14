@@ -204,6 +204,6 @@ body {
     text-align: right;
     font-style: italic;
 }
-#main #books td {
+.books td {
     font-size: 75%;
 }
