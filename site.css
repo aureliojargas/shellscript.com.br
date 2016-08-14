@@ -112,14 +112,14 @@ body {
 
 /*------------------------- Testemunhos */
 
-#main i.nome-testemunho {
+#main .nome-testemunho {
     padding-left: 1em;
     color: #333;
 }
 
 /*------------------------- Ja Comprei */
 
-#main td.passo {
+#main .passo {
     font-size: 300%;
     font-weight: bold;
     /*background: black;*/
@@ -154,7 +154,7 @@ body {
     _position: absolute;
     _overflow: none;
 }
-#main .sidebar img.capinha {
+#main .sidebar .capinha {
     border: 1px solid silver;
     display: block;
     margin: 0 auto 8px auto;
