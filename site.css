@@ -62,7 +62,11 @@ body {
 #main b {
     font-size: 105%;
 }
-#main p, blockquote, dt, dd, li {
+#main p,
+#main blockquote,
+#main dt,
+#main dd,
+#main li {
     line-height: 1.5em;
 }
 #main hr {
