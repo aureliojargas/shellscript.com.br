@@ -1,5 +1,5 @@
 body {
-	margin:3em 120px 8em 230px;
+	margin:3em 120px 3em 230px;
 	background:#fff;
 	font-family:"Lucida Grande", "Trebuchet MS", Arial, sans-serif;
 	text-align:justify;
@@ -38,6 +38,9 @@ body {
 
 /*------------------------- Main */
 
+#main {
+	margin-bottom:6em;
+}
 #main a:hover img {
 	outline:1px solid blue;
 }
@@ -181,6 +184,11 @@ body {
 }
 #main .sidebar .noticias ul li a {
 	font-weight:normal;
+}
+/*------------------------- Outros */
+.footer {
+	text-align:right;
+	font-style:italic;
 }
 #main #books td {
 	font-size:75%;
