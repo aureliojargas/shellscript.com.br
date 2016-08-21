@@ -20,6 +20,9 @@ table {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.news small {
+    color: gray;
+}
 .books-grid {
     margin-top: 2em;
 }
