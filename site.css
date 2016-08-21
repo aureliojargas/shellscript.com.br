@@ -20,6 +20,15 @@ table {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.books-grid {
+    margin-top: 2em;
+}
+.thumbnail {
+    text-align: center;
+}
+.thumbnail b {
+    color: black;
+}
 footer {
     margin: 3em 0 2em 0;
 }
