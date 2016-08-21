@@ -20,6 +20,9 @@ table {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.huge {
+    font-size: 300%;
+}
 .news small {
     color: gray;
 }
