@@ -23,6 +23,10 @@ table {
 .huge {
     font-size: 300%;
 }
+.testimonial-author {
+    padding-left: 1em;
+    color: gray;
+}
 .news small {
     color: gray;
 }
