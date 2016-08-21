@@ -1,10 +1,21 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Livro Shell Script Profissional, de Aurelio Marinho Jargas (site oficial)</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="author" content="Aurelio Jargas www.aurelio.net">
@@ -12,7 +23,56 @@
 
     <meta name="keywords" content="livro, shell, script, profissional, bash, aurelio, verde, marinho, jargas, novatec, linux, unix, mac, cygwin, windows">
     <meta name="description" content="Escrito por Aurelio Marinho Jargas (aurelio.net), o livro Shell Script Profissional ensina a fazer programas de qualidade em shell, com ênfase em código legível, portabilidade e manutenção futura.">
-    <meta name="verify-v1" content="d1EROlU9dwR+0/W9nLC+A6GgiD7VAyCxZtfnXsTRwQc=" />
+
+    <style>
+        body {
+            padding-top: 100px;
+        }
+        .navbar-fixed-top a {
+            line-height: 50px;
+            padding: 15px 0;
+            font-size: 18px;
+            color: gold;
+        }
+        h2 {
+            margin-top: 1.5em;
+            padding-top: 1.5em;
+            border-top: 1px solid #ccc;
+            margin-bottom: 1em;
+        }
+        h3 {
+            font-size: 125%;
+        }
+        dt {
+            margin-top: 1em;
+        }
+        table {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .huge {
+            font-size: 300%;
+        }
+        .testimonial-author {
+            padding-left: 1em;
+            color: gray;
+        }
+        .news small {
+            color: gray;
+        }
+        .books-grid {
+            margin-top: 2em;
+        }
+        .thumbnail {
+            text-align: center;
+        }
+        .thumbnail b {
+            color: black;
+        }
+        footer {
+            margin: 3em 0 2em 0;
+        }
+    </style>
 
     <!-- Google Analytics -->
     <script>
@@ -27,183 +87,35 @@
 
 <body>
 
-    <div class="header">
-        <h1>Shell Script Profissional</h1>
-        <h2>por <a href="http://aurelio.net">Aurelio Marinho Jargas</a></h2>
-    </div>
-
-    <div class="main">
-
-        <!--
-        <p>
-            Venda de livros e tarde de autógrafos com o autor,
-            <b>nesta sexta-feira</b> dia 18 de Abril de 2008, no
-            <a href="http://fisl.softwarelivre.org/">Fórum Internacional de Software Livre</a> em Porto Alegre. Procure o estande da livraria Tempo Real.
-        </p>
-        -->
-
-        <!--
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">
-                        <img align="middle" src="img/submarino-promocao-40.jpg" border="0" alt="">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 text-center">
+                    <a href="#comprar">
+                        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Quero comprar
                     </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">LOUCURA! 40%! Aproveite a promoção relâmpago no Submarino</a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    Além do superdesconto de 40% para você,
-                    <br>o Submarino me paga 8% pela indicação,
-                    <br>então nós dois ganhamos! \o/
-                </td>
-            </tr>
-        </table>
-        -->
-
-        <!--
-        <table align="center">
-            <tr>
-                <td>
-                    <a href="http://www.piazinho.com.br">
-                        <img align="middle" src="img/banner-festa.png" border="0" alt="">
+                </div>
+                <div class="col-xs-6 text-center">
+                    <a href="#comprei">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Já comprei
                     </a>
-                </td>
-            </tr>
-        </table>
-        -->
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <!--
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">
-                        <img align="middle" src="img/submarino.png" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">
-                        <img align="middle" src="img/submarino-promocao.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">
-                        <img align="middle" src="img/submarino-promocao-70e90.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">Aproveite a promoção relâmpago no Submarino</a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    Além do desconto de 20% para você,
-                    <br>o Submarino me paga 8% pela indicação,
-                    <br>então nós dois ganhamos. Que tal?
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    Outra opção é
-                    <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">comprar direto da editora Novatec</a>,
-                    <br>também com 20% de desconto (e eu ganho 4%).
-                    <br>Informe o código SSCRIPT no carrinho de compras.
-                </td>
-            </tr>
-        </table>
+    <div class="container">
 
-        <hr noshade size=1>
-        -->
+        <h1 class="hide">
+            Shell Script Profissional, por
+            <a href="http://aurelio.net">Aurelio Marinho Jargas</a>
+        </h1>
 
-        <!--
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">
-                        <img align="middle" src="img/novatec-promocao-20.gif" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Aproveite a promoção na Novatec</a>
-                </td>
-            </tr>
-            -->
-            <!--
-            <tr>
-                <td align="center">
-                    <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Compre direto com a Editora e economize 20%!</a>
-                </td>
-            </tr>
-            -->
-            <!--
-            <tr>
-                <td align="center">
-                    <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">...ou confira o preço do Submarino que às vezes é ainda menor!</a>
-                </td>
-            </tr>
-            -->
-        <!--
-        </table>
-
-        <hr noshade size=1>
-        -->
-
-        <!--
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="http://www.temporeal.com.br/produtos.php?id=171828">
-                        <img align="middle" src="img/temporeal-promocao-20.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
-
-        <table align="center">
-            <tr>
-                <td align="center">Que tal levar junto meu outro livro,
-                    <a href="http://www.novatec.com.br/livros/expressoesregulares/?idA=12">Expressões Regulares</a>?</td>
-            </tr>
-        </table>
-        -->
-
-        <!--
-        <blockquote>
-            <p>
-                Saiba como foi a
-                <a href="http://aurelio.net/blog/2008/04/22/a-mog-foi-no-fisl/">tarde de autógrafos no FISL</a>.
-            </p>
-            <p>
-                Já comprou o livro?
-                <a href="#ja-comprei">Saiba o que fazer agora</a>.
-            </p>
-        </blockquote>
-        -->
-
-        <table align="center">
-            <tr>
-                <td>
-                    <img align="middle" src="img/capa.jpg" border="0" alt="">
-                </td>
-            </tr>
-        </table>
+        <img class="img-responsive center-block" src="img/capa.jpg" alt="">
 
         <h2 id="info">Informações</h2>
 
-        <table>
+        <table class="table table-striped">
             <tr>
                 <td><b>Título</b></td>
                 <td>Shell Script Profissional</td>
@@ -212,8 +124,8 @@
                 <td><b>Autor</b></td>
                 <td>
                     Aur<a href="http://aurelio.net/blog/2011/05/26/aos-33-descobri-que-meu-nome-nao-tem-acento/">e</a>lio Marinho Jargas (<a href="http://aurelio.net">site</a>,
-                    <a href="http://aurelio.net/blog">blog</a>,
-                    <a href="http://twitter.com/oreio">twitter</a>)
+                    <a href="http://twitter.com/oreio">twitter</a>,
+                    <a href="http://aurelio.net/livro/">outros livros</a>)
                 </td>
             </tr>
             <tr>
@@ -264,92 +176,13 @@
             -->
         </table>
 
-        <h2 id="comprar">Onde comprar?</h2>
-
-        <ul>
-            <li><a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Novatec</a> (editora)</li>
-            <li><a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">Submarino</a>
-                <span title="Se você comprar aqui, o autor do livro (eu) ganha uma comissãozinha. Ajuda eu tio! :)">★</span></li>
-            <li><a href="https://www.amazon.com.br/Script-Profissional-Aurelio-Marinho-Jargas/dp/8575221523/">Amazon</a></li>
-            <li><a href="http://www.americanas.com.br/produto/6653866/livro-shell-script-profissional">Americanas.com</a></li>
-            <li><a href="http://www.bestbooks.com.br/livros_template.asp?Codigo_Produto=100702">BestBooks</a></li>
-            <li><a href="http://www.ciadoslivros.com.br/shell-script-profissional-67381-p127747">Cia dos Livros</a></li>
-            <li><a href="http://www.livrariacultura.com.br/p/shell-script-profissional-2435666">Cultura</a></li>
-            <li><a href="http://www.livrariascuritiba.com.br/shell-script-profissional-novatec-lv226620/p">Curitiba</a></li>
-            <li><a href="http://www.martinsfontespaulista.com.br/shell-script-profissional-358369.aspx/p">Martins Fontes Paulista</a></li>
-            <li><a href="http://www.saraiva.com.br/shell-script-profissional-2525970.html">Saraiva</a></li>
-        </ul>
-
-        <p>Compare preços:</p>
-
-        <ul>
-            <li><a href="http://compare.buscape.com.br/shell-script-profissional-aurelio-marinho-jargas-8575221523.html">BuscaPé</a></li>
-            <li><a href="http://www.bondfaro.com.br/livros.html?auto=1&amp;kw=shell+script+profissional">BondFaro</a></li>
-            <li><a href="http://www.jacotei.com.br/mod.php?module=jacotei.comparacao&amp;prodid=626971&amp;catid=215&amp;mostra=true">JáCotei</a></li>
-        </ul>
-
-        <p>
-            O livro também está à venda nas livrarias (físicas) do país, procure naquela perto de você. Se não encontrá-lo, peça pra livraria encomendá-lo. Assim você também me ajuda a fazer a conchinha galáctica se espalhar por aí :)
-        </p>
-
-        <hr noshade size=1>
-
-        <table align="center">
-            <tr>
-                <td>
-                    <img align="middle" src="img/1o-novatec.jpg" border="0" alt="">
-
-                    <a href="http://aurelio.net/blog/2008/04/15/mais-vendido-na-livraria-cultura/">
-                        <img align="middle" src="img/1o-cultura.jpg" border="0" alt="">
-                    </a>
-
-                    <a href="http://aurelio.net/blog/2008/08/21/livro-de-shell-e-tricampeao-na-tempo-real/">
-                        <img align="middle" src="img/1o-temporeal-3x.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
-
-        <table align="center">
-            <!--
-            <tr>
-                <td>
-                    <a href="http://aurelio.net/blog/2009/09/18/2000-conchinhas-vendidas/">
-                        <img align="middle" src="img/2000.png" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            -->
-            <tr>
-                <td>
-                    <a href="http://aurelio.net/blog/2010/08/19/3000-conchinhas-vendidas/">
-                        <img align="middle" src="img/3000.png" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
-
-        <!--
-        <hr noshade size=1>
-
-        <table align="center">
-            <tr>
-                <td>
-                    <a href="https://www.facebook.com/ShellScriptProfissional">
-                        <img align="middle" src="img/facebook-fanpage.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
-        -->
-
         <h2 id="download">Download</h2>
 
         <table>
             <tr>
                 <td>
                     <a href="http://www.novatec.com.br/livros/shellscript/sumario9788575221525.pdf">
-                        <img align="middle" src="img/amostra-sumario.png" border="0" alt="">
+                        <img src="img/amostra-sumario.png" alt="">
                     </a>
                 </td>
                 <td>
@@ -359,7 +192,7 @@
             <tr>
                 <td>
                     <a href="http://www.novatec.com.br/livros/shellscript/capitulo9788575221525.pdf">
-                        <img align="middle" src="img/amostra-cap4.png" border="0" alt="">
+                        <img src="img/amostra-cap4.png" alt="">
                     </a>
                 </td>
                 <td>
@@ -368,21 +201,9 @@
                     <br>40 páginas, 450 KB
                 </td>
             </tr>
-            <!--
             <tr>
                 <td>
-                    <a href="http://books.google.com/books?id=snmJepzoNfgC&amp;hl=pt-BR">
-                        <img align="middle" src="img/amostra-cap4.png" border="0" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="http://books.google.com/books?id=snmJepzoNfgC&amp;hl=pt-BR">Leia o livro no Google Books</a>
-                </td>
-            </tr>
-            -->
-            <tr>
-                <td>
-                    <img align="middle" src="img/pacotao.png" border="0" alt="">
+                    <img src="img/pacotao.png" alt="">
                 </td>
                 <td>
                     Códigos-fonte dos programas ensinados:
@@ -390,20 +211,6 @@
                     <a href="https://github.com/aureliojargas/livro-shell/archive/master.zip">baixe o zip</a>
                 </td>
             </tr>
-            <!--
-            <tr>
-                <td>
-                    <a href="shell-profissional.zip">
-                        <img align="middle" src="img/pacotao.png" border="0" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="shell-profissional.zip">Códigos-fonte dos programas ensinados</a>
-                    <br>
-                    <br>200 arquivos, 660 KB
-                </td>
-            </tr>
-            -->
         </table>
 
         <h2 id="resenha">Resenha</h2>
@@ -429,75 +236,75 @@
         <p>
             Apenas um adjetivo:
             <b>Excelente!</b>
-            <br><i class="nome-testemunho">-- Marcio Henrique (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Marcio Henrique (São Paulo - SP)</i>
         </p>
         <p>
             O livro é
             <b>perfeito</b>.
-            <br><i class="nome-testemunho">-- Weslei Moreno Mendes (Mariluz - PR)</i>
+            <br><i class="testimonial-author">— Weslei Moreno Mendes (Mariluz - PR)</i>
         </p>
         <p>
             <b>Perfeito</b>. O melhor livro que já comprei. Fico feliz por ter feito tal investimento.
-            <br><i class="nome-testemunho">-- Caio Cesar Ceccon de Azevedo (Rio de Janeiro - RJ)</i>
+            <br><i class="testimonial-author">— Caio Cesar Ceccon de Azevedo (Rio de Janeiro - RJ)</i>
 
             <!-- Original: Perfeito. O melhor livro que já comprei. Fico feliz por ter feito tal investimento. -->
         </p>
         <p>
             O livro é
             <b>perfeito</b>. O Aurelio consegue ser didático e técnico na medida certa. Só não aprende quem não quer.
-            <br><i class="nome-testemunho">-- Alex Sandro Barbosa Cruz (Recife - PE)</i>
+            <br><i class="testimonial-author">— Alex Sandro Barbosa Cruz (Recife - PE)</i>
 
             <!-- Original: O livro é perfeito. O Aurelio consegue ser didático e técnico na medida certa. Com o Shell Script profissional, só não aprende quem não quer. -->
         </p>
         <p>
             Definitivamente, é o
             <b>melhor livro</b> de informática/computação que já adquiri.
-            <br><i class="nome-testemunho">-- Cícero Julião da Silva Junior (Maceió - AL)</i>
+            <br><i class="testimonial-author">— Cícero Julião da Silva Junior (Maceió - AL)</i>
 
             <!-- Original: Definitivamente, é o melhor livre de informática/computação que já adquiri. Parabéns!!!! -->
         </p>
         <p>
             O
             <b>melhor livro técnico</b> que eu já li.
-            <br><i class="nome-testemunho">-- Thiago Nunes Vilela (Mauá - SP)</i>
+            <br><i class="testimonial-author">— Thiago Nunes Vilela (Mauá - SP)</i>
 
             <!-- Original: O melhor livro técnico que eu já li. Indispensável na sua prateleira, ou melhor, na sua cabeceira, na sua mesa, na sua mochila. -->
         </p>
         <p>
             Com toda certeza este é o
             <b>melhor livro técnico</b> que já li. Melhorei a qualidade dos meus programas de maneira incomparável.
-            <br><i class="nome-testemunho">-- Wesley Rodrigues da Silva (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Wesley Rodrigues da Silva (São Paulo - SP)</i>
 
             <!-- Original: Com toda certeza este é o melhor livro técnico que já li, e um dos melhores entre todos os assuntos. A didática do Aurelio é incrível, melhorei a qualidade dos meus programas de maneira incomparável. Meus parabéns por essa bela obra. -->
         </p>
         <p>
             No que diz respeito a livros, foi minha
             <b>melhor aquisição de toda a vida</b>.
-            <br><i class="nome-testemunho">-- Jeferson dos Santos (Rio de Janeiro - RJ)</i>
+            <br><i class="testimonial-author">— Jeferson dos Santos (Rio de Janeiro - RJ)</i>
 
             <!-- Original: Não gostei.... ficou faltando desvendar os mistérios da física quântica e dos buracos negros.... Mas no que diz respeito a Shell Script está perfeito (mas gostaria de abordagem sobre como controlar bancos de dados "de verdade" via shell). Posso dizer que no que diz respeito a livros, foi minha melhor aquisição de toda a vida. Você deveria fazer um livro sobre iptables, porque com sua didática fica impossível não aprender.... Abraços. -->
         </p>
         <p>
             <b>Genial</b>. Simples, direto e muito bem explicado.
-            <br><i class="nome-testemunho">-- Bruno Gonçalves Tikami (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Bruno Gonçalves Tikami (São Paulo - SP)</i>
         </p>
         <p>
             <b>Não poderia ser melhor.</b>
-            <br><i class="nome-testemunho">-- Fabio Maximo (Campinas - SP)</i>
+            <br><i class="testimonial-author">— Fabio Maximo (Campinas - SP)</i>
         </p>
         <p>
             Simplesmente tinha tudo que eu precisava saber no livro!
             <b>Recomendo a compra 120%</b>.
-            <br><i class="nome-testemunho">-- Viktor Mota (Vitória - ES)</i>
+            <br><i class="testimonial-author">— Viktor Mota (Vitória - ES)</i>
         </p>
         <p>
             <b>Vale a pena</b>, até para quem acha que sabe tudo como eu...
-            <br><i class="nome-testemunho">-- Roger Boff (Florianópolis - SC)</i>
+            <br><i class="testimonial-author">— Roger Boff (Florianópolis - SC)</i>
         </p>
         <p>
             Comprei o livro e posso dizer que foi
             <b>um dos melhores investimentos que já fiz</b>. Realmente estávamos precisando de uma publicação desse nível no Brasil. Perfeito para profissionais que queiram aprender a criar programas (e não scripts) em shell.
-            <br><i class="nome-testemunho">-- Rodrigo Amorim Ferreira (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Rodrigo Amorim Ferreira (São Paulo - SP)</i>
 
             <!-- Comentário recebido via e-mail -->
             <!-- Original no site da Novatec: Perfeito para profissionais que queiram aprender a criar programas (e não scripts) em shell. Também é perfeito para corrigir os erros mais comuns de programação que o leitor venha a ter em sua bagagem de aprendizado. Quanto mais cedo você aprender a fazer da maneira certa, mais cedo você se tornará um bom profissional na área. -->
@@ -505,26 +312,26 @@
         <p>
             Foi o primeiro livro técnico que consegui ler do início ao fim, sem pular nada, como se fosse um livro de ficção. O que ganhei de produtividade com as dicas do livro
             <b>valeu cada centavo investido na compra</b>. E olha que sendo estagiário fica meio brabo de comprar as coisas :-)
-            <br><i class="nome-testemunho">-- Guilherme Magalhães Gall (Petrópolis - RJ)</i>
+            <br><i class="testimonial-author">— Guilherme Magalhães Gall (Petrópolis - RJ)</i>
 
             <!-- Comentário recebido via e-mail -->
         </p>
         <p>
             Excelente livro, mostra dicas maravilhosas sobre shell script, realmente um
             <b>trabalho majestoso</b> que merece reconhecimento.
-            <br><i class="nome-testemunho">-- Wellington Alves Cabral (São João de Meriti - RJ)</i>
+            <br><i class="testimonial-author">— Wellington Alves Cabral (São João de Meriti - RJ)</i>
         </p>
         <p>
             Essa é uma verdadeira
             <b>obra de arte</b> que não encontrávamos no Brasil. Você que está lendo esse comentário e ao mesmo momento com uma pequena dúvida de comprar o livro, siga em frente, adicione-o à cesta e seja um programador de verdade.
-            <br><i class="nome-testemunho">-- Fábio Campos Coelho (Itabuna - BA)</i>
+            <br><i class="testimonial-author">— Fábio Campos Coelho (Itabuna - BA)</i>
 
             <!-- Original: Essa é uma verdadeira obra de arte onde não encontrávamos no Brasil. Já sabia da profissionalidade do Aurelio, pois sou leitor do seu site. Bom, pra você que está lendo esse comentário e ao mesmo momento com uma pequena dúvida de comprar o livro, siga em frente, adicione-o a cesta e seja um programador de verdade. Bom, esse é o meu recado. Parabéns pela obra. Que Deus continue iluminando suas idéias, pois este é o primeiro de muitos. -->
         </p>
         <p>
             Comprei o livro nesta tarde de domingo, era o único exemplar, e depois que o peguei em mãos
             <b>não consegui mais largar</b>. Já tive belas idéias para incrementar meus scripts de manutenção que uso no trabalho e transformá-los em programas de verdade. Está de parabéns pelo livro e que seja um sucesso.
-            <br><i class="nome-testemunho">-- Antônio Pessoa (Recife - PE, <a href="http://aurelio.net/blog/2008/04/04/parto-prematuro/#comment-1078046189">comentário original</a>)</i>
+            <br><i class="testimonial-author">— Antônio Pessoa (Recife - PE, <a href="http://aurelio.net/blog/2008/04/04/parto-prematuro/#comment-1078046189">comentário original</a>)</i>
 
             <!-- Comentário original em meu blog: Comprei o livro nesta tarde de domingo. Domingo sempre é chato, então resolvi fazer algo produtivo. Liguei para a livraria e fiz a r reserva, era o único exemplar, e depois que o peguei em mãos não consegui mais largar. Já tive belas idéias para incrementar meus scripts de manutenção que uso no trabalho e transforma-los em programas de verdade. Esta de parabéns pelo livro e que seja um sucesso. P.S.: Em breve vou comprar o de ER e completo minha coleção :) (e que ela cresça mais ainda). -->
 
@@ -539,51 +346,51 @@
         <p>
             Trabalho com redes e linux, conheço razoavelmente o sistema e adoro Shell, tenho alguns scripts aqui que me ajudam muito, e
             <b>com o livro estou aperfeiçoando</b>.
-            <br><i class="nome-testemunho">-- Marcelo Conti (Arapongas - PR)</i>
+            <br><i class="testimonial-author">— Marcelo Conti (Arapongas - PR)</i>
         </p>
         <p>
             Sou um Analista de Sistemas Java e sempre desenvolvi em ambientes Linux, desde 10 anos atrás. Sempre usei Shell Script para as tarefas mais básicas, mas se a complexidade aumentava eu usava Perl. Desde que eu comprei o seu livro,
             <b>passei a usar Shell para tudo</b> :-)
-            <br><i class="nome-testemunho">-- Sérgio Oliveira (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Sérgio Oliveira (São Paulo - SP)</i>
         </p>
         <p>
             Livro muito bom, de fácil entendimento e serviu para me auxiliar onde eu estava precisando,
             <b>tirando todas as minhas dúvidas</b>.
-            <br><i class="nome-testemunho">-- Rafael Iguatemy (Rio de Janeiro - RJ)</i>
+            <br><i class="testimonial-author">— Rafael Iguatemy (Rio de Janeiro - RJ)</i>
         </p>
         <p>
             Trabalho com Linux há algum tempo, mas nunca tive
             <b>conceitos bem fundamentados</b> de programação em Shell Script, o que o seu livro me proporcionou.
-            <br><i class="nome-testemunho">-- Guilherme Rezende (Santa Rita do Sapucai - MG)</i>
+            <br><i class="testimonial-author">— Guilherme Rezende (Santa Rita do Sapucai - MG)</i>
         </p>
         <p>
             O livro é excepcional, ensinando tópicos complexos com bom humor e mostrando a cada capítulo o caminho das pedras de como programar. Gostei tanto dos primeiros capítulos que
             <b>vamos utilizar na empresa</b>, pois os iniciantes geralmente não conhecem as boas práticas, como comentários, cabeçalhos de scripts e como separar os blocos lógicos. Enfim, recomendado para quem realmente quer ser profissional em shell.
-            <br><i class="nome-testemunho">-- Douglas Soares de Andrade (Brasília - DF)</i>
+            <br><i class="testimonial-author">— Douglas Soares de Andrade (Brasília - DF)</i>
 
             <!-- Original: O livro é excepcional, ensinando tópicos complexos com bom humor e mostrando a cada capítulo o caminho das pedras de como programar. Gostei tanto dos primeiros capítulos que vamos utilizar na empresa, pois os iniciantes geralmente não conhecem as boas práticas, como comentários, cabeçalhos de scripts e como separar os blocos lógicos. Enfim, recomendado para quem realmente quer ser profissional em shell =) -->
         </p>
         <p>
             Estou com o livro aberto nesse minuto ao meu lado, lendo quando devia estar dormindo e achando muito massa! De verdade! Ah, como é bom ler um
             <b>texto técnico feito por alguém que realmente sabe escrever</b>, o que é coisa rara na área. Sinceramente, meus parabéns!
-            <br><i class="nome-testemunho">-- Daniel Duclós (Amsterdam - Holanda)</i>
+            <br><i class="testimonial-author">— Daniel Duclós (Amsterdam - Holanda)</i>
 
             <!-- Comentário recebido via e-mail em 2008-04-14 -->
         </p>
         <p>
             Gostei muito da abordagem que você faz no livro, pois não só ensina o Shell de fato, como orienta e
             <b>incentiva boas práticas de programação</b>.
-            <br><i class="nome-testemunho">-- Samir Braga (<a href="http://aurelio.net/blog/2008/04/15/mais-vendido-na-livraria-cultura/#comment-1078048617">comentário original</a>)</i>
+            <br><i class="testimonial-author">— Samir Braga (<a href="http://aurelio.net/blog/2008/04/15/mais-vendido-na-livraria-cultura/#comment-1078048617">comentário original</a>)</i>
         </p>
         <p>
             Sou estudante da FATEC-OU, faço ASTI (Análise de Sistemas e Tecnologia da Informação) e comprei o livro para entender melhor o funcionamento dos scripts feitos em shell e ele está sendo muito útil. Com ele ao meu lado
             <b>comecei a fazer meus primeiros scripts</b>.
-            <br><i class="nome-testemunho">-- Lucas de Biaggi Januário (Ourinhos - SP)</i>
+            <br><i class="testimonial-author">— Lucas de Biaggi Januário (Ourinhos - SP)</i>
         </p>
         <p>
             Já estou quase no meio dele, desde que comprei, não consegui desgrudar! Como em todos os textos e os outros livros do Aurelio, você não tem a impressão de ler um livro, e sim, de que está falando pessoalmente com ele! Com uma
             <b>didática impressionante</b> que além de ensinar, faz com que você aprenda de forma natural. Recomendo para qualquer um que goste de "brincar" na linha de comando!
-            <br><i class="nome-testemunho">-- Tiago Oliveira de Jesus (São Paulo - SP)</i>
+            <br><i class="testimonial-author">— Tiago Oliveira de Jesus (São Paulo - SP)</i>
 
             <!-- Original: Como em todos os textos e os outros livros do Aurelio, você não tem a impressão de ler um livro, e sim, de que está falando pessoalmente com ele! Com uma ditática impressionante que além de ensinar, faz com que você aprenda de forma natural. Recomendo para qualquer um que goste de "brincar" na linha de comando! -->
             <!-- O outro trecho veio por e-mail -->
@@ -591,104 +398,104 @@
         <p>
             Ótimo livro. Descontraído e
             <b>gostoso de ler</b>, obras como estas enriquecem o aprendizado. Parabéns.
-            <br><i class="nome-testemunho">-- Alceu de Lima Sampaio (Boa Vista - RR)</i>
+            <br><i class="testimonial-author">— Alceu de Lima Sampaio (Boa Vista - RR)</i>
         </p>
         <p>
             Os livros do Aurelio, apesar do conteúdo técnico, podem ser lidos do início ao fim
             <b>como se fosse um livro de ficção</b>. Cada capítulo influencia o leitor a seguir em frente, o que torna a leitura muito mais divertida. Recomendo.
-            <br><i class="nome-testemunho">-- Bruna Griebeler (<a href="http://br-linux.org/wparchive/2008/shell-script-profissional-por-aurelio-marinho-jargas.php#comment-6063">comentário no BR-Linux</a>)</i>
+            <br><i class="testimonial-author">— Bruna Griebeler (<a href="http://br-linux.org/wparchive/2008/shell-script-profissional-por-aurelio-marinho-jargas.php#comment-6063">comentário no BR-Linux</a>)</i>
         </p>
         <p>
             Antes de ler esse livro, desenvolvia scripts sem tomar qualquer cuidado com o fonte, o meu objetivo era apenas que ele "fizesse o que era pra fazer...".
             <b>Hoje desenvolvo verdadeiros programas</b>, que qualquer pessoa com o devido conhecimento básico da linguagem, seria capaz de compreender o conteúdo e dar a devida manutenção ao mesmo. Lendo esse livro, você percebe a sutil diferença entre scripts e programas.
-            <br><i class="nome-testemunho">-- Thiago Santana (<a href="http://br.groups.yahoo.com/group/shell-script/message/27014">grupo shell-script</a>)</i>
+            <br><i class="testimonial-author">— Thiago Santana (<a href="http://br.groups.yahoo.com/group/shell-script/message/27014">grupo shell-script</a>)</i>
 
             <!-- Original: Antes de ler esse livro, desenvolvia scripts sem tomar qualquer cuidado com o fonte, o meu objetivo era apenas que ele "fizesse o que era pra fazer...". Hoje desenvolvo verdadeiros programas, que qualquer pessoa com o devido conhecimento básico da linguagem, seria capaz de compreender o conteúdo e dar a devida manutenção ao mesmo. Lendo esse livro, você percebe a sutil diferença entre scripts e programas feitos com linguagem Shell Script. -->
         </p>
         <p>
             Não conheço o Aurelio e não tenho motivos pra fazer jabá de graça pra ele, realmente só estou dando a dica pois o livro é muito bom. O livro não leva o nome "Profissional" por nada. O autor procura, após ensinar os conceitos,
             <b>passar ao leitor boas práticas</b> para realizar tarefas recorrentes (documentação, tratamento de parâmetros da linha de comando, entre outros).
-            <br><i class="nome-testemunho">-- <a href="http://www.caiomoritz.com/2009/01/22/shell-script-profissional/">Caio Moritz Ronchi</a> (SC)</i>
+            <br><i class="testimonial-author">— <a href="http://www.caiomoritz.com/2009/01/22/shell-script-profissional/">Caio Moritz Ronchi</a> (SC)</i>
         </p>
         <p>
             É um material
             <b>indispensável</b> na mesa de qualquer administrador de sistemas ou quem deseja se aprofundar em linha de comando.
-            <br><i class="nome-testemunho">-- <a href="http://christiano.me/shell-script-profissional-livro/">Christiano Anderson</a> (SP)</i>
+            <br><i class="testimonial-author">— <a href="http://christiano.me/shell-script-profissional-livro/">Christiano Anderson</a> (SP)</i>
         </p>
         <p>
             Que livro bonito! Que edição bem cuidada! Da capa à página final, um livro próprio para a cabeceira. Imagino a trabalheira para organizar e escrever os capítulos, mas
             <b>já nasceu como um clássico do assunto</b>. Um livraço!
-            <br><i class="nome-testemunho">-- Franklin Carvalho (SP)</i>
+            <br><i class="testimonial-author">— Franklin Carvalho (SP)</i>
 
             <!-- Comentário recebido via e-mail em 2008-04-09 -->
         </p>
         <p>
             Esse é um livro que eu recomendo sem hesitar. O Aurelio tem um histórico de bons trabalhos invejável, mas dessa vez se superou: o conteúdo de seu novo livro é riquíssimo e, na minha opinião, é
             <b>leitura obrigatória para desenvolvedores</b> ou para quem quer se aventurar no mundo do shell script.
-            <br><i class="nome-testemunho">-- Emerson Alecrim, <a href="http://www.infowester.com/blog/?p=646">Blog InfoWester</a></i>
+            <br><i class="testimonial-author">— Emerson Alecrim, <a href="http://www.infowester.com/blog/?p=646">Blog InfoWester</a></i>
         </p>
         <p>
             O que marca mesmo o trabalho do Aurelio, além da sua qualidade, é a
             <b>forma didática e divertida como aborda temas complexos</b>. Aprender a programar em shell com seu novo livro será uma experiência, antes de tudo, agradável e divertida.
-            <br><i class="nome-testemunho">-- Rubens Queiroz, <a href="http://www.dicas-l.com.br/">Portal Dicas-L</a></i>
+            <br><i class="testimonial-author">— Rubens Queiroz, <a href="http://www.dicas-l.com.br/">Portal Dicas-L</a></i>
         </p>
         <p>
             O livro é muito bem trabalhado. O texto é bem divertido e o conteúdo é excelente. Vale lembrar que não é um livro para iniciantes, ou uma simples apostila.
             <b>É um trabalho cuidadoso</b> que, além de trazer à tona as técnicas para um uso profissional de shell scripting, nos mostra vários pontos interessantes sobre questões mais gerais da programação, como qualidade e legibilidade do código produzido. Se você já conhece alguma coisa de shell script e quer aprofundar seu conhecimento, vale a pena dar uma olhada.
-            <br><i class="nome-testemunho">-- Flávio Amieiro, <a href="http://www.meiobit.com/forum/topic/livro-shell-script-profissional-de-aurelio-marinho-jargas">Fórum Meio Bit</a></i>
+            <br><i class="testimonial-author">— Flávio Amieiro, <a href="http://www.meiobit.com/forum/topic/livro-shell-script-profissional-de-aurelio-marinho-jargas">Fórum Meio Bit</a></i>
         </p>
         <p>
             <b>O capítulo final "Dicas preciosas" é um achado</b>, assim com o Apêndice C, que disseca e comenta várias das Funções ZZ e dos truques empregados nelas pelo autor. Recomendo!
-            <br><i class="nome-testemunho">-- Augusto Campos, <a href="http://br-linux.org/2008/shell-script-profissional-por-aurelio-marinho-jargas">Portal BR-Linux</a></i>
+            <br><i class="testimonial-author">— Augusto Campos, <a href="http://br-linux.org/2008/shell-script-profissional-por-aurelio-marinho-jargas">Portal BR-Linux</a></i>
         </p>
         <p>
             Antes de começar a falar especificamente sobre a programação em Shell, o Aurelio usa
             <b>os capítulos 1 a 3</b> para falar como deve ser um bom programa. Ele faz isso de maneira tão clara, objetiva, e bem recheada de exemplos, que acho que só esses três capítulos já poderiam ser vendidos em separado para qualquer um que quer tornar-se um bom programador. Vou mais longe: estes capítulos
             <b>deveriam ser a introdução de todos os outros livros</b> abordando linguagens de programação.
-            <br><i class="nome-testemunho">-- Cesar Brod, <a href="http://www.dicas-l.com.br/brod/brod_20080505.php">colunista da Dicas-L</a></i>
+            <br><i class="testimonial-author">— Cesar Brod, <a href="http://www.dicas-l.com.br/brod/brod_20080505.php">colunista da Dicas-L</a></i>
         </p>
         <p>
             Como era "o livro do Aurelio", abri interessado pois seus textos nunca são técnicos o bastante para serem técnicos. São na verdade um romance daqueles que se lê em uma confortável poltrona deleitando-se com cada uma das palavras. E este livro não é diferente. Até mesmo para leigos como eu, seus ensinamentos simplesmente aparecem diante dos olhos de forma clara e o assunto torna-se a cada página, mais interessante, mais envolvente. [...] O livro Shell Script Profissional é
             <b>obra obrigatória de aquisição e cada centavo gasto será recompensado</b> da melhor forma possível: conhecimento de verdade. Não acredita? Compre e leia. Se não ficar satisfeito eu devolvo seu dinheiro.
-            <br><i class="nome-testemunho">-- Paulino Michelazzo, <a href="http://www.michelazzo.com.br/node/416">Blog Maçãs Cercadas por Pingüins</a></i>
+            <br><i class="testimonial-author">— Paulino Michelazzo, <a href="http://www.michelazzo.com.br/node/416">Blog Maçãs Cercadas por Pingüins</a></i>
         </p>
         <p>
             Recomendo a todos os colegas da área, que possuem um pezinho no mundo do Pinguim, ler o livro Shell Script Profissional. São centenas de boas dicas de como
             <b>programar feito gente grande em Shell</b>, bons puxões de orelha, descontração e muito, mas muito código mesmo. E isso tudo para não falar de uma didática que me surpreendeu por fazer você se lembrar de uma conversa com aquele colega de trabalho bacana que saca pra caramba de algum assunto interessante. [...] Aurelio, parabéns por essa grande conquista: Escrever como uma pessoa normal para pessoas normais que gostam de programar.
-            <br><i class="nome-testemunho">-- Moacir Filho, <a href="http://completelyforgotten.wordpress.com/2008/06/19/jaba/">Blog Completely Forgotten</a></i>
+            <br><i class="testimonial-author">— Moacir Filho, <a href="http://completelyforgotten.wordpress.com/2008/06/19/jaba/">Blog Completely Forgotten</a></i>
         </p>
         <p>
             O livro conta com grandes técnicas de programação e depuração, capazes de tornar seus scripts muito mais profissionais e de fácil manutenção, evoluindo-os ao patamar de programas completos. [...] Uma aquisição indispensável para todos que desejam utilizar essas poderosas ferramentas que vêm disponíveis em qualquer distribuição Linux. [...] Com todas as dicas e os guias de referência contidos no livro, a tarefa de
             <b>programação em Shell torna-se muito mais prazerosa e útil</b> para todos. Este é um livro que tem tudo para tornar-se um best seller no universo do Software Livre.
-            <br><i class="nome-testemunho">-- necropresto, <a href="http://www.slackwarebrasil.org/2008/06/06/deixe-de-ser-um-scripteiro-e-transforme-se-em-um-verdadeiro-programador-em-shell/">Grupo de Usuarios Slackware Brasil</a></i>
+            <br><i class="testimonial-author">— necropresto, <a href="http://www.slackwarebrasil.org/2008/06/06/deixe-de-ser-um-scripteiro-e-transforme-se-em-um-verdadeiro-programador-em-shell/">Grupo de Usuarios Slackware Brasil</a></i>
         </p>
         <p>
             Não costumo fazer reviews, nem puxar o saco de autores, mais essa é uma das raras situações. [...] É um livro excelente, leitura leve, agradável, não usa uma linguagem muito técnica que facilita muito o entendimento. [...] Recomendo a todos que desejam aprender mais sobre shell script ou que estão iniciando no mundo da programação (não só sobre shell script).
-            <br><i class="nome-testemunho">-- <a href="http://0fx66.com/blog/programacao/shellscript-profissional/">VonNaturAustreVe</a></i>
+            <br><i class="testimonial-author">— <a href="http://0fx66.com/blog/programacao/shellscript-profissional/">VonNaturAustreVe</a></i>
         </p>
         <p>
             Bem, não tem nem como descrever esse livro - me falta palavras - além de aprender como nunca aprendi sobre shell script na vida, ri a beça. Acho que deve ser por isso, a receita certa é essa.
             <b>Se divertir enquanto aprende</b>. Não tive como não lê-lo até o final e voltar sempre que preciso. Com este, vou ficar a consultar por um bom tempo.
-            <br><i class="nome-testemunho">-- Maycon Rodrigo Moreira (Palhoça - SC)</i>
+            <br><i class="testimonial-author">— Maycon Rodrigo Moreira (Palhoça - SC)</i>
         </p>
         <p>
             Leitura recomendada para todos, não só no sentido da programação mas com o livro também se aprende sobre comandos no Linux e suas funcionalidades. [...] Nas primeiras páginas já noto o zêlo no qual o autor escreve, preocupando-se sempre com o leitor usando uma liguagem bastante acessivel e descontraida.
-            <br><i class="nome-testemunho">-- Douglas Barbosa, <a href="http://oseomessias.wordpress.com/2009/01/12/dica-de-leitura-livro-shell-script-profissional/">blog O Seo Messias</a></i>
+            <br><i class="testimonial-author">— Douglas Barbosa, <a href="http://oseomessias.wordpress.com/2009/01/12/dica-de-leitura-livro-shell-script-profissional/">blog O Seo Messias</a></i>
         </p>
         <p>
             A linguagem adotada é excelente, que prende o leitor,
             <b>explicações simples e eficazes</b>. Confesso que até o momento da leitura, não utilizava nem a metade das orientações do livro, como: Nomes padronizados para variáveis e Flags, Changelog, etc... No máximo eu utilizava apenas identação e comentários.
-            <br><i class="nome-testemunho">-- <a href="http://marcelorl.wordpress.com/2008/09/15/shell-script/">Marcelo Ribeiro</a></i>
+            <br><i class="testimonial-author">— <a href="http://marcelorl.wordpress.com/2008/09/15/shell-script/">Marcelo Ribeiro</a></i>
         </p>
         <p>
             Pô, como falar mal de um livro escrito pelo Aurelio? O cara escreve bem, manda bem e sabe explicar. É um livro técnico, não chato de ler - sim, isso existe. [...] Os primeiros capítulos do livro deveriam ser obrigação de leitura para qualquer pessoa que se diga programador. [...] Os capítulos seqüentes abordam o que o título sugere: SHELL SCRIPT.
             <b>De uma maneira profunda e profissional</b>, te dá excelentes idéias e clareia sua mente para um mundo mais automatizado (e amigável). Recomendo, com certeza!
-            <br><i class="nome-testemunho">-- <a href="http://maneh.org/2008/07/shell-script-profissional/">Leonardo Saraiva</a></i>
+            <br><i class="testimonial-author">— <a href="http://maneh.org/2008/07/shell-script-profissional/">Leonardo Saraiva</a></i>
         </p>
         <p>
             Ao contrário dos livros tradicionais, ele traz uma organização interna diferenciada e que privilegia aqueles que já possuem algum conhecimento e desejam, a partir de uma
             <b>abordagem prática orientada por situações reais</b>, incrementar sua capacitação na linguagem. [...] Um exemplar desse livro, com certeza, deve ter espaço reservado na prateleira daqueles que, independente da necessidade, precisam lidar com shell scripts. Seja como um manual de consulta, seja como um guia de estudo, vale a pena prestigiar o trabalho do Aurelio!
-            <br><i class="nome-testemunho">-- Jansen Sena, <a href="http://www.jsena.info/2008/08/05/do-you-know-shell-script-nao-se-preocupe-agora-e-facil-divertido-e-em-bom-portugues/">resenha para a Revista PC &amp; Cia</a></i>
+            <br><i class="testimonial-author">— Jansen Sena, <a href="http://www.jsena.info/2008/08/05/do-you-know-shell-script-nao-se-preocupe-agora-e-facil-divertido-e-em-bom-portugues/">resenha para a Revista PC &amp; Cia</a></i>
         </p>
 
         <blockquote>
@@ -696,65 +503,20 @@
             <a href="http://www.novatec.com.br/comentarios.php?isbn=9788575221525">lá no site da editora</a> que tem mais.
         </blockquote>
 
-        <!--
-        <h2 id="comprar">Comprar</h2>
-
-        <p>
-            Promoção de lançamento:
-            <b>20% de desconto</b> na compra!
-        </p>
-        <p>
-            Vá no
-            <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">site da editora</a>, clique no carrinho de compras e preencha o código promocional AURELIO. Aperte o botão OK ao lado e o preço total mudará para 68 reais.
-        </p>
-
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="img/novatec-codigo.jpg">
-                        <img align="middle" src="img/novatec-codigo-mini.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    De
-                    <s>R$ 85,00</s> por
-                    <b>R$ 68,00</b>!
-                </td>
-            </tr>
-        </table>
-
-        <p>
-            Depois preencha seu CEP para que seja calculado o preço do frete. Você pode aproveitar para também colocar o livro
-            <a href="http://www.novateceditora.com.br/livros/expreg/?idA=12">Expressões Regulares</a> no carrinho, com desconto!
-        </p>
-        <p>
-            Não demore, este código promocional é válido somente até 30 de Abril de 2008.
-        </p>
-
-        <div class=box>
-            <table>
-                <tr>
-                    <td>
-                        <a href="http://aurelio.net/livro/cadastro/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex2.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        Você já possui o livro
-                        <a href="http://aurelio.net/er/livro">Expressões Regulares</a>? Então preencha o
-                        <a href="http://aurelio.net/livro/cadastro/">cadastro de leitores</a> para ter acesso a um código exclusivo que dá direito a 30% de desconto na compra do livro de shell, ficando por apenas R$
-                        <b>59,90</b>!
-                    </td>
-                </tr>
-            </table>
-        </div>
-        -->
-
         <h2 id="duvidas">Dúvidas</h2>
 
-        <h3 id="julio">Eu já tenho o livro "Programação Shell Linux" do Julio Neves, devo comprar o seu também?</h3>
+        <h3>Eu nem sei o que é shell, devo comprar seu livro?</h3>
+
+        <p>
+            Não.
+        </p>
+        <p>
+            Este livro é indicado para pessoas que já possuem um conhecimento básico sobre shell, como por exemplo saber usar a linha de comando e fazer scripts simples. Se você quer aprender o básico, consulte o
+            <a href="http://aurelio.net/shell">portal de shell script</a> e estude os vários guias gratuitos ali listados. Recomendo também a compra do livro
+            <a href="http://www.submarino.com.br/produto/113876789/livro-programacao-shell-linux?franq=AFL-03-10261">Programação Shell Linux</a>, do meu amigo Julio Cezar Neves, que ensina o básico.
+        </p>
+
+        <h3>Eu já tenho o livro "Programação Shell Linux" do Julio Neves, devo comprar o seu também?</h3>
 
         <p>
             Sim.
@@ -780,25 +542,15 @@
             Perceba como cada passo é detalhado com explicações claras e exemplos. Veja em negrito as mudanças no código, acompanhando com facilidade a evolução do programa. Tudo tem um porquê e cada alteração é explicada de maneira completa. Há também várias dicas de programação no meio do texto, tornando seu aprendizado ainda mais rico. Figuras como a da página 77 tornam fáceis conceitos complicados.
         </p>
 
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <a href="img/shift.jpg">
-                        <img align="middle" src="img/shift-mini.jpg" border="0" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <i><a href="img/shift.jpg">Figuras didáticas explicam os conceitos</a></i>
-                </td>
-            </tr>
-        </table>
-
-        <hr noshade size=1>
+        <p class="text-center">
+            <a href="img/shift.jpg">
+                <img class="img-responsive center-block" src="img/shift-mini.jpg" alt="">
+                <i>Figuras didáticas explicam os conceitos</i>
+            </a>
+        </p>
 
         <!--
-        <h3 id="apostila">Eu já tenho sua apostila de Shell Avançado, devo comprar o livro também?</h3>
+        <h3>Eu já tenho sua apostila de Shell Avançado, devo comprar o livro também?</h3>
 
         <p>
             Sim.
@@ -822,35 +574,6 @@
             <i>Apêndice C - Análise das Funções ZZ</i>, que em deliciosas 56 páginas disseca todos os segredos do
             <a href="http://code.google.com/p/funcoeszz/source/browse/trunk/funcoeszz">complexo código</a> do software
             <a href="http://funcoeszz.net">Funções ZZ</a>.
-        </p>
-
-        <hr noshade size=1>
-        -->
-
-        <h3>Eu nem sei o que é shell, devo comprar seu livro?</h3>
-
-        <p>
-            Não.
-        </p>
-        <p>
-            Este livro é indicado para pessoas que já possuem um conhecimento básico sobre shell, como por exemplo saber usar a linha de comando e fazer scripts simples. Se você quer aprender o básico, consulte o
-            <a href="http://aurelio.net/shell">portal de shell script</a> e estude os vários guias gratuitos ali listados. Recomendo também a compra do livro
-            <a href="http://www.submarino.com.br/produto/113876789/livro-programacao-shell-linux?franq=AFL-03-10261">Programação Shell Linux</a>, do meu amigo Julio Cezar Neves, que ensina o básico.
-        </p>
-
-        <!--
-        <hr noshade size=1>
-
-        <h3>Estou na dúvida se compro o teu livro ou o do Julio</h3>
-
-        <p>
-            Para quem não tem nenhum dos dois, vai depender do quanto você sabe de shell hoje. Se é iniciante, compre o do Julio. Se já faz seus scripts, compre o meu.
-        </p>
-        <p>
-            O livro do Julio ensina tudo desde o início, como fazer um IF, como usar a linha de comando, como usar os comandos. É o que eu aconselho se você não tem nenhuma experiência em shell.
-        </p>
-        <p>
-            O meu livro, assim como a apostila, assume que você já sabe o básico. Daí adiante ele vai fundo nos conceitos, fazendo análises em códigos, programando, aprimorando os conhecimentos que você já possui em shell.
         </p>
         -->
 
@@ -950,97 +673,340 @@
             </dd>
         </dl>
 
-        <h2 id="outros">Outros livros do mesmo autor</h2>
+        <h2 id="noticias">Notícias sobre o livro</h2>
 
-        <div class="books">
-            <table>
-                <tr>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex5.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed4/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex4.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed3/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex3.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed2/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex2.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed1/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/livroregex1.png" border="0" alt="">
-                        </a>
-                    </td>
-                    <td align="center">
-                        <a href="http://aurelio.net/regex/guia/">
-                            <img align="middle" src="http://aurelio.net/img/icon/128/guiaregex.png" border="0" alt="">
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br">Expressões Regulares - Uma abordagem divertida (5ª edição)</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed4/">Expressões Regulares - Uma abordagem divertida (4ª edição)</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed3/">Expressões Regulares - Uma abordagem divertida (3ª edição)</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed2/">Expressões Regulares - Uma abordagem divertida (2ª edição)</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.piazinho.com.br/ed1/">Expressões Regulares - Uma abordagem divertida (1ª edição)</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://aurelio.net/regex/guia/">Expressões Regulares - Guia de Consulta Rápida</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td align="center">
-                        <b>ESGOTADO</b>
-                    </td>
-                    <td align="center">
-                        <b>ESGOTADO</b>
-                    </td>
-                    <td align="center">
-                        <b>ESGOTADO</b>
-                    </td>
-                    <td align="center">
-                        <b>ESGOTADO</b>
-                    </td>
-                    <td align="center">
-                        <b>ESGOTADO</b>
-                    </td>
-                </tr>
-            </table>
+        <dl class="news">
+            <dt><a href="http://aurelio.net/blog/2010/08/19/3000-conchinhas-vendidas/">3.000 exemplares vendidos</a></dt>
+            <dd>
+                <small>19 Agosto 2010</small> No mês de maio foi vendido o 3.000º exemplar do livro Shell Script Profissional. Já são dois anos no mercado, e o livro continua com um fôlego surpreendente.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2009/09/18/2000-conchinhas-vendidas/">2.000 exemplares vendidos</a></dt>
+            <dd>
+                <small>05 Agosto 2009</small> No mês de julho foi vendido o 2.000º exemplar do livro Shell Script Profissional. Pouco mais de um ano após seu lançamento, o livro continua sendo bem requisitado pelos leitores.
+            </dd>
+            <dt><a href="http://www.temporeal.com.br/atemporeal.php">Terceiro mais vendido na Tempo Real em outubro</a></dt>
+            <dd>
+                <small>10 Novembro 2008</small> No mês de outubro, o Shell Script Profissional foi o terceiro livro mais vendido de todo o acervo da livraria Tempo Real. O primeiro lugar ficou com o Expressões Regulares - Uma Abordagem Divertida, que também foi escrito pelo mesmo autor.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/10/28/1000-conchinhas-vendidas/">1.000 exemplares vendidos em seis meses</a></dt>
+            <dd>
+                <small>28 Outubro 2008</small> No mês de setembro foi vendido o milésimo exemplar do livro Shell Script Profissional. Superando as estimativas mais otimistas, o livro é um sucesso de vendas que continua com muito fôlego seis meses após o seu lançamento.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/10/28/1000-conchinhas-vendidas/">Livro mais vendido na Tempo Real em setembro</a></dt>
+            <dd>
+                <small>28 Outubro 2008</small> No mês de setembro, o Shell Script Profissional foi o livro mais vendido de todo o acervo da livraria Tempo Real, fazendo a dobradinha no pódio com o vice-campeão Expressões Regulares - Uma Abordagem Divertida, que também foi escrito pelo mesmo autor.
+            </dd>
+            <dt><a href="http://aurelio.net/blog/2008/09/12/tempo-real-dominada/">Segundo mais vendido na Tempo Real em agosto</a></dt>
+            <dd>
+                <small>15 Setembro 2008</small> No mês de agosto, o Shell Script Profissional foi o segundo livro mais vendido de todo o acervo da livraria Tempo Real, fazendo a dobradinha no pódio com o campeão Expressões Regulares - Uma Abordagem Divertida, que também foi escrito pelo mesmo autor.
+            </dd>
+
+            <dt><a href="img/resenha-linuxmagazine.png">Resenha na revista Linux Magazine</a></dt>
+            <dd>
+                <small>29 Agosto 2008</small> A revista Linux Magazine do mês de julho (edição 44), trouxe uma resenha bem positiva do livro Shell Script Profissional. Chamado de "verdadeiro marco" e "obra de arte", o livro foi elogiado e recomendado pela revista.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/08/21/livro-de-shell-e-tricampeao-na-tempo-real/">Tricampeão na Tempo Real</a></dt>
+            <dd>
+                <small>16 Agosto 2008</small> Pelo terceiro mês consecutivo, o livro Shell Script Profissional foi o mais vendido de todo o acervo da livraria Tempo Real: maio, junho e julho de 2008. Esta é uma marca histórica a se comemorar!
+            </dd>
+
+            <dt><a href="http://www.jsena.info/2008/08/05/do-you-know-shell-script-nao-se-preocupe-agora-e-facil-divertido-e-em-bom-portugues/">Resenha na revista PC &amp; Cia</a></dt>
+            <dd>
+                <small>6 Agosto 2008</small> A revista PC &amp; Cia deste mês (edição 83) traz uma resenha bem completa sobre o livro Shell Script Profissional. Saindo do tradicional, o texto também analisou a estrutura do livro e seu diferencial para com os livros estrangeiros. O autor da resenha, Jansen Sena, também a publicou em seu blog. Confira!
+            </dd>
+
+            <dt><a href="http://www.livrariacultura.com.br/scripts/cultura/maisv/maisv.asp?nassunto=3&amp;nveiculomv=1&amp;cidioma=por&amp;sid=20135324681113414742479053&amp;k5=20E93D9D&amp;uid=">Terceiro mais vendido da semana na Livraria Cultura</a></dt>
+            <dd>
+                <small>4 Agosto 2008</small> O livro Shell Script Profissional ficou em terceiro lugar na lista dos mais vendidos da Livraria Cultura, na seção de Informática, na semana de 28 de julho a 3 de agosto de 2008.
+            </dd>
+
+            <dt><a href="http://www.livrariacultura.com.br/scripts/cultura/maisv/maisv.asp?nassunto=3&amp;nveiculomv=1&amp;cidioma=por&amp;sid=20135324681113414742479053&amp;k5=20E93D9D&amp;uid=">Quarto mais vendido da semana na Livraria Cultura</a></dt>
+            <dd>
+                <small>15 Julho 2008</small> O livro Shell Script Profissional ficou em quarto lugar na lista dos mais vendidos da Livraria Cultura, na seção de Informática, na semana de 7 a 13 de julho de 2008.
+            </dd>
+
+            <dt><a href="http://www.temporeal.com.br/atemporeal.php">Novamente em primeiro na Tempo Real</a></dt>
+            <dd>
+                <small>5 Julho 2008</small> Pelo segundo mês consecutivo, o livro Shell Script Profissional foi o mais vendido de todo o acervo da livraria Tempo Real. Eles estão com uma promoção imperdível, vendendo o livro a R$ 66,00. Se você ainda não tem o seu, aproveite!
+            </dd>
+
+            <dt><a href="http://www.temporeal.com.br/atemporeal.php">Mais vendido na Tempo Real em maio</a></dt>
+            <dd>
+                <small>6 Junho 2008</small> Em todas as páginas do site da livraria Tempo Real há um quadro com a lista dos 10 livros mais vendidos. No mês de maio o Shell Script Profissional foi o livro mais vendido de todo o acervo da livraria!
+            </dd>
+
+            <dt><a href="http://www.fortium.com.br/curricular_pos/Pos_Desenvolvimento_em_Software_Livre.php">Livro adotado em pós-graduação de software livre em Brasília</a></dt>
+            <dd>
+                <small>2 Junho 2008</small> O livro Shell Script Profissional foi adotado como material integrante do curso Pós em Software Livre (ênfase em redes, segurança e bancos de dados), da Faculdade Fortium em Brasília. Com carga horária de cerca de 500 horas, o curso forma profissionais especialistas em software livre, agora também instruídos com o livro preto do shell.
+            </dd>
+
+            <dt><a href="http://www.livrariacultura.com.br/scripts/cultura/maisv/maisv.asp?nassunto=3&amp;nveiculomv=1&amp;cidioma=por&amp;sid=20135324681113414742479053&amp;k5=20E93D9D&amp;uid=">Oitavo mais vendido da semana na Livraria Cultura</a></dt>
+            <dd>
+                <small>19 Maio 2008</small> O livro Shell Script Profissional ficou em oitavo lugar na lista dos mais vendidos da Livraria Cultura, na seção de Informática, na semana de 12 a 18 de maio de 2008.
+            </dd>
+
+            <dt><a href="http://www.michelazzo.com.br/node/416">Paulino Michelazzo recomenda a compra do livro</a></dt>
+            <dd>
+                <small>15 Maio 2008</small> Famoso na comunidade do Software Livre, Paulino Michelazzo escreveu um artigo completo sobre o livro de shell, comentando que seu conteúdo é como "um romance daqueles que se lê em uma confortável poltrona deleitando-se com cada uma das palavras". Satisfeito com a obra e demonstrando total certeza de sua utilidade para administradores de sistemas, Paulino recomenda a compra: "Cada centavo gasto será recompensado da melhor forma possível: conhecimento de verdade. Não acredita? Compre e leia. Se não ficar satisfeito eu devolvo seu dinheiro."
+            </dd>
+
+            <dt><a href="http://www.linuxmall.com.br/index.php?page=categ/mais_vendidos&amp;category_id=917">Entre os mais vendidos na LinuxMall</a></dt>
+            <dd>
+                <small>14 Maio 2008</small> O livro Shell Script Profissional entrou na lista dos mais vendidos da LinuxMall.
+            </dd>
+
+            <dt><a href="http://www.livrariacultura.com.br/scripts/cultura/maisv/maisv.asp?nassunto=3&amp;nveiculomv=1&amp;cidioma=por&amp;sid=20135324681113414742479053&amp;k5=20E93D9D&amp;uid=">Terceiro mais vendido da semana na Livraria Cultura</a></dt>
+            <dd>
+                <small>12 Maio 2008</small> O livro Shell Script Profissional ficou em terceiro lugar na lista dos mais vendidos da Livraria Cultura, na seção de Informática, na semana de 5 a 11 de maio de 2008.
+            </dd>
+
+            <dt><a href="http://www.dicas-l.com.br/brod/brod_20080505.php">Cesar Brod fala sobre o livro no portal Dicas-L</a></dt>
+            <dd>
+                <small>5 Maio 2008</small> Cesar Brod aproveitou o espaço de sua coluna no portal Dicas-L para falar um pouco sobre o Aurelio e seu livro de shell. Citando o embasamento sobre programação e código limpo dos primeiros capítulos, Cesar sugere que estes ensinamentos deveriam ser conhecidos por todos os programadores, independente da linguagem utilizada.
+            </dd>
+
+            <dt><a href="http://www.novateceditora.com.br/top15.php">Shell Script Profissional é o mais vendido da editora Novatec em abril</a></dt>
+            <dd>
+                <small>2 Maio 2008</small> Hoje foi divulgado o ranking mensal com os livros mais vendidos pela editora Novatec. O lançamento Shell Script Profissional aparece no primeiro lugar em abril, confirmando a boa receptividade de crítica e público. Com mais de 200 livros em seu catálogo, estar em primeiro na lista da editora é uma marca a se comemorar.
+            </dd>
+
+            <dt><a href="http://www.temporeal.com.br/atemporeal.php">Segundo mais vendido na Tempo Real em abril</a></dt>
+            <dd>
+                <small>2 Maio 2008</small> Em todas as páginas do site da livraria Tempo Real há um quadro com a lista dos 10 livros mais vendidos. No mês de abril o Shell Script Profissional foi o segundo mais vendido de todo o acervo da livraria.
+            </dd>
+
+            <dt><a href="http://www.temporeal.com.br/fislpg01.php">Livro mais vendido durante o FISL</a></dt>
+            <dd>
+                <small>30 Abril 2008</small> A livraria Tempo Real, que montou um estande no Fórum Internacional de Software Livre, preparou uma área em seu site para os 30 livros mais vendidos no evento. Encabeçando a lista, em destaque, está o Shell Script Profissional, confirmando os resultados de seu ritmo acelerado de vendas durante o FISL.
+            </dd>
+
+            <dt><a href="http://nerdson.com/blog/fisl9-closed/">Nerdson também comprou o livro</a></dt>
+            <dd>
+                <small>23 Abril 2008</small> O personagem de histórias em quadrinhos Nerdson foi ao Fórum Internacional de Software Livre (FISL) e garantiu seu exemplar do livro Shell Script Profissional. Na tirinha intitulada fisl9.closed() ele aparece segurando o livro já no primeiro quadro. Na vida real, seu criador Karlisson Bezerra também é leitor do livro e apareceu para bater um papo animado durante a tarde de autógrafos.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/04/22/a-mog-foi-no-fisl/">Descontração na tarde de autógrafos com o autor no FISL</a></dt>
+            <dd>
+                <small>22 Abril 2008</small> (Porto Alegre - RS) O que era para ser somente uma tarde de autógrafos no sábado, virou um final de semana de confraternização entre autor e leitores, que estendeu-se pela tarde e noite de sábado e teve repeteco no domingo durante o dia todo. Durante o Fórum Internacional de Software Livre (FISL), mais de uma centena de livros foram vendidos em poucas horas no estande da livraria Tempo Real, tornando muito concorrida a busca por um autógrafo do autor, com direito a dedicatória e conversa descontraída.
+            </dd>
+
+            <dt><a href="http://www.flickr.com/photos/aureliojargas/2435012696/">Aurelio e Julio Neves tiram foto histórica</a></dt>
+            <dd>
+                <small>18 Abril 2008</small> (Porto Alegre - RS) Aproveitando o encontro no Fórum Internacional de Software Livre, Aurelio Jargas e Julio Neves, os autores dos dois livros nacionais sobre shell script, sorriram para a câmera. Cada um segurando e recomendando o livro do outro, provaram que a amizade prevalece, mostrando que são parceiros e não concorrentes.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/04/15/mais-vendido-na-livraria-cultura/">Primeiro lugar na lista dos mais vendidos da Livraria Cultura</a></dt>
+            <dd>
+                <small>15 Abril 2008</small> O livro Shell Script Profissional ganhou o primeiro lugar na lista dos mais vendidos da Livraria Cultura, na seção de Informática. O ranking da livraria é semanal e o período aferido foi do dia 7 a 13 de abril de 2008.
+            </dd>
+
+            <dt><a href="http://aurelio.net/livro/cadastro/">Desconto especial de 30% para leitores do livro Expressões Regulares</a></dt>
+            <dd>
+                <small>4 Abril 2008</small> Leitores do outro livro do Aurelio, Expressões Regulares - Uma Abordagem Divertida, ganham um desconto especial de 30% na compra do livro de shell, pagando apenas R$ 59,50. Para ter acesso ao código de desconto e instruções de como proceder a compra, basta cadastrar-se como leitor, direto no site do autor em aurelio.net/livro/cadastro.
+            </dd>
+
+            <dt><a href="http://www.novatec.com.br/livros/shellscript/">Desconto especial de 20% no mês de lançamento</a></dt>
+            <dd>
+                <small>4 Abril 2008</small> Como promoção especial de lançamento, a editora Novatec está dando 20% de desconto na compra do livro Shell Script Profissional durante o mês de abril, ficando por R$ 68,00. Basta comprar o livro diretamente no site da editora e informar o código de desconto AURELIO.
+            </dd>
+
+            <dt><a href="http://aurelio.net/blog/2008/04/04/parto-prematuro/">Lançamento nacional do livro Shell Script Profissional</a></dt>
+            <dd>
+                <small>4 Abril 2008</small> O resultado de dois anos de trabalho do programador e escritor Aurelio Marinho Jargas já está nas livrarias: Shell Script Profissional, um livro de 480 páginas que aborda a linguagem shell de maneira profissional, focando em qualidade, código legível, portabilidade e manutenção futura. Com conteúdo original explicado de maneira clara e didática, o livro abre as portas da programação àqueles que já arriscam escrever seus scripts, seja no Linux, Unix, Mac ou Windows. Para saber mais, visite o site oficial do livro www.shellscript.com.br.
+            </dd>
+        </dl>
+
+
+        <h2 id="outros-livros">Outros livros do mesmo autor</h2>
+
+        <div class="row books-grid">
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://www.piazinho.com.br">
+                    <img src="http://aurelio.net/img/icon/128/livroregex5.png" alt=""> Expressões Regulares
+                    <br>(5ª edição)
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://www.piazinho.com.br/ed4/">
+                    <img src="http://aurelio.net/img/icon/128/livroregex4.png" alt=""> Expressões Regulares
+                    <br> (4ª edição)
+                    <br>
+                    <b>ESGOTADO</b>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://www.piazinho.com.br/ed3/">
+                    <img src="http://aurelio.net/img/icon/128/livroregex3.png" alt=""> Expressões Regulares
+                    <br> (3ª edição)
+                    <br>
+                    <b>ESGOTADO</b>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://www.piazinho.com.br/ed2/">
+                    <img src="http://aurelio.net/img/icon/128/livroregex2.png" alt=""> Expressões Regulares
+                    <br> (2ª edição)
+                    <br>
+                    <b>ESGOTADO</b>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://www.piazinho.com.br/ed1/">
+                    <img src="http://aurelio.net/img/icon/128/livroregex1.png" alt=""> Expressões Regulares
+                    <br> (1ª edição)
+                    <br>
+                    <b>ESGOTADO</b>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a class="thumbnail" href="http://aurelio.net/regex/guia/">
+                    <img src="http://aurelio.net/img/icon/128/guiaregex.png" alt=""> Expressões Regulares - Guia de Consulta Rápida
+                    <br>
+                    <b>ESGOTADO</b>
+                </a>
+            </div>
         </div>
 
-        <hr noshade size=1>
+        <h2 id="comprar">Onde comprar?</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <ul>
+                    <li>
+                        <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Novatec</a> (editora)
+                    </li>
+                    <li>
+                        <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">Submarino</a>
+                        <span title="Se você comprar aqui, o autor do livro (eu) ganha uma comissãozinha. Ajuda eu tio! :)">★</span>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.com.br/Script-Profissional-Aurelio-Marinho-Jargas/dp/8575221523/">Amazon</a>
+                    </li>
+                    <li>
+                        <a href="http://www.americanas.com.br/produto/6653866/livro-shell-script-profissional">Americanas.com</a>
+                    </li>
+                    <li>
+                        <a href="http://www.bestbooks.com.br/livros_template.asp?Codigo_Produto=100702">BestBooks</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ciadoslivros.com.br/shell-script-profissional-67381-p127747">Cia dos Livros</a>
+                    </li>
+                    <li>
+                        <a href="http://www.livrariacultura.com.br/p/shell-script-profissional-2435666">Cultura</a>
+                    </li>
+                    <li>
+                        <a href="http://www.livrariascuritiba.com.br/shell-script-profissional-novatec-lv226620/p">Curitiba</a>
+                    </li>
+                    <li>
+                        <a href="http://www.martinsfontespaulista.com.br/shell-script-profissional-358369.aspx/p">Martins Fontes Paulista</a>
+                    </li>
+                    <li>
+                        <a href="http://www.saraiva.com.br/shell-script-profissional-2525970.html">Saraiva</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <p>Compare preços:</p>
+                <ul>
+                    <li>
+                        <a href="http://compare.buscape.com.br/shell-script-profissional-aurelio-marinho-jargas-8575221523.html">BuscaPé</a>
+                    </li>
+                    <li>
+                        <a href="http://www.bondfaro.com.br/livros.html?auto=1&amp;kw=shell+script+profissional">BondFaro</a>
+                    </li>
+                    <li>
+                        <a href="http://www.jacotei.com.br/mod.php?module=jacotei.comparacao&amp;prodid=626971&amp;catid=215&amp;mostra=true">JáCotei</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <p>
-            Links rápidos:
+            O livro também está à venda nas livrarias (físicas) do país, procure naquela perto de você. Se não encontrá-lo, peça pra livraria encomendá-lo. Assim você também me ajuda a fazer a conchinha galáctica se espalhar por aí :)
         </p>
 
-        <ul>
-            <li>
-                <a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Compre direto com a editora</a>
-            </li>
-            <li>
-                <a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">Compre pelo Submarino</a> (eu ganho comissão de 3%)
-            </li>
-        </ul>
+        <p class="text-center">
+            <img src="img/1o-novatec.jpg" alt="">
+
+            <a href="http://aurelio.net/blog/2008/04/15/mais-vendido-na-livraria-cultura/">
+                <img src="img/1o-cultura.jpg" alt="">
+            </a>
+
+            <a href="http://aurelio.net/blog/2008/08/21/livro-de-shell-e-tricampeao-na-tempo-real/">
+                <img src="img/1o-temporeal-3x.jpg" alt="">
+            </a>
+        </p>
+
+        <a href="http://aurelio.net/blog/2010/08/19/3000-conchinhas-vendidas/">
+            <img class="img-responsive center-block" src="img/3000.png" alt="">
+        </a>
+
+        <h2 id="comprei">Eu já comprei o meu!</h2>
+
+        <p>
+            Muito obrigado pelo seu apoio ao meu trabalho. Você fez um nerd feliz :)
+        </p>
+        <p>
+            Agora siga os passos sagrados no caminho da iluminação suprema:
+        </p>
+
+        <table class="table">
+            <tr>
+                <td class="active huge text-center">1</td>
+                <td>
+                    <s>Compre o livro.</s>
+                    <img src="img/ok.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="active huge text-center">2</td>
+                <td>
+                    <a href="https://github.com/aureliojargas/livro-shell">Consulte no GitHub os códigos-fonte</a> dos programas ensinados, com a sintaxe destacada por cores, facilitando o entendimento. Ou
+                    <a href="https://github.com/aureliojargas/livro-shell/archive/master.zip">baixe-os</a> para testá-los em seu computador.
+                </td>
+            </tr>
+            <tr>
+                <td class="active huge text-center">3</td>
+                <td>Reserve um tempo de qualidade e leia o livro com calma, saboreando cada tópico. Não tenha pressa para terminar, estude cada detalhe com atenção.</td>
+            </tr>
+            <tr>
+                <td class="active huge text-center">4</td>
+                <td>
+                    Se você achar algum erro simples no livro,
+                    <a href="http://aurelio.net/img/emeio.png">mande-me um e-mail</a> avisando. Se você achar um erro mais sério, que prejudique o entendimento (Errata),
+                    <a href="http://www.novatec.com.br/errata.php?isbn=9788575221525">cadastre-o no site da editora</a>. Antes, porém, dê uma olhada nas
+                    <a href="http://www.novatec.com.br/livros/shellscript/errata.html">erratas já encontradas</a>.
+                </td>
+            </tr>
+            <tr>
+                <td class="active huge text-center">5</td>
+                <td>
+                    <a href="http://www.novatec.com.br/opine.php?isbn=9788575221525">Mande sua opinião</a> sobre o livro e ajude a conchinha dourada a multiplicar-se!
+                </td>
+            </tr>
+            <tr>
+                <td class="active huge text-center">6</td>
+                <td>
+                    <a href="http://aurelio.net/livro/cadastro/">Registre-se como leitor</a> para eu saber que você comprou o livro e para poder participar de futuras promoções.
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <a href="http://aurelio.net/livro/cadastro/">
+                <img class="img-responsive center-block" src="img/cartao-shell.jpg" alt="">
+            </a>
+        </p>
+
+        <p>
+            É isso. Nos vemos lá no
+            <a href="http://aurelio.net">site</a> ou no
+            <a href="http://twitter.com/oreio">twitter</a>.
+        </p>
 
         <!--
         <h2>Palavra do autor</h2>
@@ -1062,72 +1028,16 @@
         </p>
         -->
 
-        <div class="sidebar">
-            <p>
-                <a href="img/capa.jpg">
-                    <img align="middle" src="img/capa-100.jpg" border="0" alt="">
-                </a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-right">
+                Achou algum problema?
+                <a href="https://github.com/aureliojargas/shellscript.com.br/blob/gh-pages/index.html">Edite esta página no GitHub</a>.
             </p>
-
-            <div class="nav">
-                <ul>
-                    <li><a href="/#info">Informações</a></li>
-                    <li><a href="/#amostra">Amostra</a></li>
-                    <li><a href="/#resenha">Resenha</a></li>
-                    <li><a href="/#testemunhos">Testemunhos</a></li>
-                    <li><a href="/#duvidas">Dúvidas</a></li>
-                    <li><a href="/#tour">Tour</a></li>
-                    <li><a href="/leitores.html">Já comprei!</a></li>
-                </ul>
-            </div>
-
-            <div class="noticias">
-                <p>
-                    <b>Notícias</b>
-                </p>
-                <ul>
-                    <li><a href="/noticias.html">3.000 exemplares vendidos</a></li>
-                    <li><a href="/noticias.html">Tricampeão na Tempo Real</a></li>
-                    <li><a href="/noticias.html">Livro adotado em pós</a></li>
-                    <li><a href="/noticias.html">Mais vendido da Novatec</a></li>
-                    <li><a href="/noticias.html">Livro mais vendido no FISL</a></li>
-                </ul>
-            </div>
-
-            <p>
-                <b>Comprar</b>
-            </p>
-            <ul>
-                <li><a href="http://www.novatec.com.br/livros/shellscript/?idA=12">Novatec</a> (editora)</li>
-                <li><a href="http://www.submarino.com.br/produto/6653866/livro-shell-script-profissional?franq=AFL-03-10261">Submarino</a>
-                    <span title="Se você comprar aqui, o autor do livro (eu) ganha uma comissãozinha. Ajuda eu tio! :)">★</span></li>
-                <li><a href="https://www.amazon.com.br/Script-Profissional-Aurelio-Marinho-Jargas/dp/8575221523/">Amazon</a></li>
-                <li><a href="http://www.americanas.com.br/produto/6653866/livro-shell-script-profissional">Americanas.com</a></li>
-                <li><a href="http://www.bestbooks.com.br/livros_template.asp?Codigo_Produto=100702">BestBooks</a></li>
-                <li><a href="http://www.ciadoslivros.com.br/shell-script-profissional-67381-p127747">Cia dos Livros</a></li>
-                <li><a href="http://www.livrariacultura.com.br/p/shell-script-profissional-2435666">Cultura</a></li>
-                <li><a href="http://www.livrariascuritiba.com.br/shell-script-profissional-novatec-lv226620/p">Curitiba</a></li>
-                <li><a href="http://www.martinsfontespaulista.com.br/shell-script-profissional-358369.aspx/p">Martins Fontes Paulista</a></li>
-                <li><a href="http://www.saraiva.com.br/shell-script-profissional-2525970.html">Saraiva</a></li>
-            </ul>
-
-            <p>
-                <b>Compare preços</b>
-            </p>
-            <ul>
-                <li><a href="http://compare.buscape.com.br/shell-script-profissional-aurelio-marinho-jargas-8575221523.html">BuscaPé</a></li>
-                <li><a href="http://www.bondfaro.com.br/livros.html?auto=1&amp;kw=shell+script+profissional">BondFaro</a></li>
-                <li><a href="http://www.jacotei.com.br/mod.php?module=jacotei.comparacao&amp;prodid=626971&amp;catid=215&amp;mostra=true">JáCotei</a></li>
-            </ul>
-
         </div>
-        <!-- /sidebar -->
-    </div>
-
-    <div class="footer">
-        Achou algum problema?
-        <a href="https://github.com/aureliojargas/shellscript.com.br/blob/gh-pages/index.html">Edite esta página no GitHub</a>.
-    </div>
+    </footer>
 </body>
 
 </html>
